@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media print {
+  /* Wymusza drukowanie kolorów i teł, które przeglądarka często usuwa */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Ukrywa wszystkie elementy z klasą 'print:hidden' (to już masz z Tailwinda) */
+  /* Ale dla pewności dodajemy to tutaj */
+  .no-print {
+    display: none !important;
+  }
+}
