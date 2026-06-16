@@ -821,9 +821,9 @@ export default function App() {
                   </div>
                 )}
                 {cvData.personal.linkedin && (
-                  <div className="flex items-center gap-1.5 truncate">
-                    <span className="text-slate-400 font-bold text-xs">in</span>
-                    <span className="truncate">{cvData.personal.linkedin}</span>
+                  <div className="flex items-center gap-1.5 w-full">
+                    <span className="text-slate-400 font-bold text-xs shrink-0">in</span>
+                    <span className="whitespace-nowrap">{cvData.personal.linkedin}</span>
                   </div>
                 )}
                 {cvData.personal.website && (
