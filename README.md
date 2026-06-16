@@ -26,6 +26,12 @@ This is a modern Single Page Application (SPA) built with a focus on speed and s
 * **Styling:** Tailwind CSS (utility-first CSS framework, heavily utilizing responsive design and print modifiers like `print:hidden`).
 * **Hosting & CI/CD:** **Vercel**. The app is hosted statically, allowing anyone to use the generator via a public link without needing to install Node.js or clone the repository locally. Every push to the `main` branch automatically triggers a new deployment.
 
+## Privacy & Security (Zero Data Retention)
+Building a CV involves handling sensitive personal information. This application is designed with a strict **Privacy-First** architecture to guarantee user safety:
+* **No Database / No Backend:** There is no server-side storage. This tool is a static frontend application running entirely locally on your device.
+* **Client-Side Execution:** The data you type into the generator lives only temporarily in your browser's memory (React State).
+* **Auto-Wipe:** The moment you refresh the page or close the tab, all your personal data vanishes completely. Nothing is collected, transmitted, or tracked.
+
 ## How to run locally (For developers)
 If you want to clone and run this project on your local machine:
 ```bash
