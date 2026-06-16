@@ -1,16 +1,36 @@
-# React + Vite
+# ATS-Friendly IT CV Builder APP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-18.0+-61DAFB?logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-Frontend_Tooling-646CFF?logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-Styling-38B2AC?logo=tailwind-css&logoColor=white)
+![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?logo=vercel)
 
-Currently, two official plugins are available:
+**Live Demo: [Link to the app (Vercel)](#)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Project Purpose
+The primary goal of this project was to create a lightweight, accessible tool for my friends and peers to quickly generate professional, **ATS-friendly** (Applicant Tracking System) CVs tailored for the Polish IT and Tech job market. 
 
-## React Compiler
+Instead of wrestling with formatting in Word or Canva, users can simply input their data, adjust the layout, pick a custom theme color, and export a perfectly aligned PDF.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Key Features
+* **Privacy-First (No Backend):** All data is processed entirely in the user's browser (Client-Side). No personal information is saved to any database.
+* **Dynamic Theming:** An integrated Hex color picker allows users to instantly change the accent color of their entire resume.
+* **Layout Engine:** Toggle between a Modern (2-column) design or a strictly Classic (1-column) format optimized for automated ATS parsers.
+* **Polish Market Ready:** Pre-configured with mandatory GDPR/RODO compliance clauses required by Polish employers.
+* **Print-to-PDF Optimized:** Custom CSS `@media print` rules ensure the browser exports a clean, marginless A4 document without UI clutter.
 
-## Expanding the ESLint configuration
+## Architecture & Tech Stack
+This is a modern Single Page Application (SPA) built with a focus on speed and simplicity:
+* **Framework:** React.js (Functional Components, React Hooks `useState` for dynamic form state management).
+* **Build Tool:** Vite (chosen for its lightning-fast Hot Module Replacement and optimized production build).
+* **Styling:** Tailwind CSS (utility-first CSS framework, heavily utilizing responsive design and print modifiers like `print:hidden`).
+* **Hosting & CI/CD:** **Vercel**. The app is hosted statically, allowing anyone to use the generator via a public link without needing to install Node.js or clone the repository locally. Every push to the `main` branch automatically triggers a new deployment.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## How to run locally (For developers)
+If you want to clone and run this project on your local machine:
+```bash
+# Install dependencies
+npm install
+
+# Start the local Vite development server
+npm run dev
