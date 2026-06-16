@@ -5,7 +5,7 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-Styling-38B2AC?logo=tailwind-css&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?logo=vercel)
 
-**Live Demo: [Link to the app (Vercel)](#)**
+**Live Demo: [https://cv-builder-app-ten.vercel.app/](#)**
 
 ## Project Purpose
 The primary goal of this project was to create a lightweight, accessible tool for my friends and peers to quickly generate professional, **ATS-friendly** (Applicant Tracking System) CVs tailored for the Polish IT and Tech job market. 
